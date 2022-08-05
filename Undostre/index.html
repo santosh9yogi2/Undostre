@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnDosTre</title>
+    <link rel="stylesheet" href="./css/index.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div style="width: auto;" >
+            <img src="./img/logo.png" alt="logo" style="width: 230px; margin-top: 20px; margin-left: 10px;">
+        </div>
+        <div class="headbar1">
+            <a href="#" >Begining</a>
+            <a href="#">FAQ</a>
+            <a href="#">Vaccancy</a>
+        </div>
+        <div class="headbar2">
+
+            <div>
+                 <a href="#" > <img src="./img/header/newLook_invitaGana-1.png"  style="width: 13%;" alt=""> Invite and Win</a>          
+            </div>
+
+            <div>
+                 <a href="#"><img src="./img/header/newLook_codigo-2.png" style="width: 13%;" alt="">Do You have Code</a>           
+            </div >
+
+            <div>
+                <a href="#" ><img src="./img/header/newLook_miCuenta-3.png" style="width: 15%;" alt="">My Account</a>
+            </div>
+            
+            <div >
+                <a href="#" onclick="myModal()" id="link">Sign Up</a>
+                <!-- Model -->
+                 <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                       <div class="windowform" style="margin: 5px;">
+                            <a href="#">Sign up</a>
+                            <a href="#">Access</a>
+                            <span class="close" onclick="modalClose()">&times;</span>
+                       </div>
+                       <div class="fbRegister">
+                        <a href="#"><img src="./img/header/fbRegister.png"  alt="fbRegister" ></a>
+                       </div>
+                       <div>
+                           <p class="line" style="text-align: center; color: blue;">or sign up with email</p>
+                       </div>
+
+                       <div class="pop_form">
+                           <form>
+                               <input type="text" placeholder="Name" name="" id="">
+                               <input type="number" name="contact" id="" placeholder="Mobile Number">
+                               <input type="email" name="" id="email" placeholder="Email">
+                               <input type="password" name="psw" id="" placeholder="Password">
+                               <input type="password" name="psw" id="" placeholder="Confirm Password"> <br> <br>
+                               <button type="submit">register</button>
+                           </form>
+                       </div>
+                       <div>
+                           <p>By registering you are accepting our <a href="#" style="text-decoration: none; color: blue;">terms and conditions,</a> and our <a href="#" style="text-decoration: none; color: blue;">privacy policies.</a></p>
+                       </div>
+                      
+                    </div>
+                  
+                  </div>
+            </div>
+            <div >
+                <a href="#" onclick="myModal()" id="link">Access</a>
+                <!-- Model -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <div>
+                        <span class="close" onclick="modalClose()">&times;</span>
+                      </div>
+                      <div>
+                        <a href="#">Access</a>
+                        <a href="#">Sign up</a>
+                      </div>
+                    </div>
+                  
+                  </div>
+            </div>
+           
+        </div>
+    </header>
+
+    <div style="height: 650px" style="display: inline; ">
+        <div class="payment" style="height: 90px; background-color: rgba(238, 241, 235, 0.849); ">
+
+           <div class="navbar"  id="navbar1" onclick="navlink(this.id)">
+               <a href="#"> <img src="./img/Navbar/newLook_recarga_1.png" alt=""><br>Mobile<br>Recharge</a>
+           </div>
+
+           <div class="navbar" id="navbar2" onclick="navlink(this.id)" >
+              
+               <a href="#"> <img src="./img/Navbar/newLook_tag_2.png" alt=""><br>Recharge<br>Tag</a>
+           </div>
+            
+           <div class="navbar" id="navbar3"  onclick="navlink(this.id)" >
+               
+               <a href="#"><img src="./img/Navbar/newLook_luz_3.png" alt=""><br>Pay<br>CFE</a>
+           </div>
+            
+           <div class="navbar" id="navbar4"  onclick="navlink(this.id)">
+               
+               <a href="#"><img src="./img/Navbar/newLook_internet_4.png" alt=""><br>Pay<br>Internet</a>
+           </div>
+           
+           <div class="navbar" id="navbar5"  onclick="navlink(this.id)">
+               
+               <a href="#"><img src="./img/Navbar/newLook_tv_5.png" alt=""><br>Pay<br>Television</a>
+           </div>
+            
+           <div class="navbar" id="navbar6"  onclick="navlink(this.id)">
+               
+               <a href="#"><img src="./img/Navbar/newLook_postPago_6.png" alt=""><br>Cell<br>Plan</a>
+           </div>
+            
+           <div class="navbar" id="navbar7"  onclick="navlink(this.id)">
+               
+               <a href="#"><img src="./img/Navbar/newLook_agua_7.png" alt=""><br>Pay<br> Water</a>
+           </div>
+           <div class="navbar" id="navbar8"  onclick="navlink(this.id)">
+               
+               <a href="#"><img src="./img/Navbar/newLook_gas_8.png" alt=""><br>Pay<br>Gas</a>
+           </div>
+
+           <div class="navbar" id="navbar9"  onclick="navlink(this.id)"> 
+               <a href="#"><img src="./img/Navbar/newLook_Entretenimiento_9.png" alt=""><br>Pay<br>Entertainment</a>
+           </div>
+
+          <div class="navbar" id="navbar10"  onclick="navlink(this.id)">              
+                <a href="#"><img src="./img/Navbar/newLook_transport_10.png" alt=""><br>Urban<br>Transport</a>
+           </div>
+
+            <div class="navbar" id="navbar11"  onclick="navlink(this.id)">                
+                <a href="#"><img src="./img/Navbar/newLook_giftCard_11.png" alt=""><br>Buy<br>Gift card</a>
+            </div>
+
+            <div class="navbar" id="navbar12"  onclick="navlink(this.id)">               
+              <a href="#"><img src="./img/Navbar/newLook_VIP_12.png" alt=""><br>Vip</a>
+            </div>
+
+            <div class="navbar" id="navbar13"  onclick="navlink(this.id)">             
+                <a href="#"><img src="./img/Navbar/newLook_cinema_13.png" alt=""><br>Straming/<br>Cinema</a>
+            </div>
+        
+            <div class="navbar" id="navbar14"  onclick="navlink(this.id)">             
+               <a href="#"><img src="./img/Navbar/newLook_prestamos_14.png" alt=""><br>Personal<br>Loan</a>
+            </div>
+
+            
+            
+            
+        </div>
+        <div class="box">
+            <div class="item" id="phone_recharge" style="display:block ;">
+                <form action="" style="display: flex; flex-direction: column;"  >
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Phone Recharge</h2>
+                    <input type="text" name="operater" id="" placeholder="Operator">
+                    <input type="tel" name="mobile" placeholder="cell Phone number(10 Digit)">
+                    <input type="plan_amount" name="plan" id="" placeholder="Recharge amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+            <div class="item" id="recharge_tag" >
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Recharge Tag</h2>
+                    <input type="text" name="operater" id="" placeholder="Operator">
+                    <input type="tel" name="mobile" placeholder="Tag Number">
+                    <input type="number" name="plan" id="" placeholder="Recharge amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+            <div class="item" id="electrical_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Electricity Payment</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="tel" name="mobile" placeholder="Service Number">
+                    <input type="number" name="plan" id="" placeholder="Payment amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="internet_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Internet Payment</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="tel" name="mobile" placeholder="Service Number">
+                    <input type="number" name="plan" id="" placeholder="Payment amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="tv_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Pay Tv</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="tel" name="mobile" placeholder="Service Number">
+                    <input type="number" name="plan" id="" placeholder="Payment amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="cell_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Cellular Plan</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="tel" name="mobile" placeholder="Service Number">
+                    <input type="number" name="plan" id="" placeholder="Payment amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="water_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Water Payment</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="tel" name="mobile" placeholder="Service Number">
+                    <input type="number" name="plan" id="" placeholder="Payment amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="gas_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Gas Payment</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="tel" name="mobile" placeholder="Service Number">
+                    <input type="number" name="plan" id="" placeholder="Payment amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="entertainment_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Entertainment</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="number" name="plan" id="" placeholder="type">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="urban_trans_pay">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Urban transport</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="number" name="plan" id="" placeholder="Amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="gift_card">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Buy Gift Cards</h2>
+                    <input type="text" name="operater" id="" placeholder="Company">
+                    <input type="number" name="plan" id="" placeholder="Purchase amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="movie_ticket">
+                <form action="">
+                    <h2 style="margin-left: 10px; margin-left: 20px;">Movie tickets</h2>
+                    <input type="text" name="operater" id="" placeholder="Movie theater">
+                    <input type="text" name="mobile" placeholder="ticket type">
+                    <input type="number" name="plan" id="" placeholder="Payment amount">
+                    <button type="submit" >Following</button>
+                </form>
+            </div>
+
+            <div class="item" id="personal_loan">
+
+            </div>
+            <div class="item2">
+                <img src="./img/offer.png" alt="offer">
+            </div>
+
+            <div>
+                  <!-- model  -->
+                  <div id="loan_model">
+                    <!-- modal content -->
+                    <span id="loan_close" onclick="loan_close()">&times;</span>
+                    <h1>rgtertgreg</h1>
+                    <h2>wgerghth5juuyerwteryhtrh</h2>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container" style="display: flex; flex-direction: column;">
+        <img src="./img/papar_logo.png" style="width: 20%; height: 20%; margin: 20px; margin-left: 70px;" alt="logo" >
+        <h2 style="margin: 3px; margin-left: 100px;">The easiest, fastest and safest way to make your payments</h2>
+            <div style="display: flex;">
+                <div>
+                    <div class="para">
+                        <h3>PHONE RECHARGE</h3>
+                        <p> Recharge your cell phone from any company in seconds, with just 3 clicks and from wherever you want</p>
+                    </div>
+                    <div class="para">
+                        <h3>MOVIE TICKETS</h3>
+                        <p>Buy your Cinépolis and Cinemex tickets and go to the function you want in the cinema of your choice</p>
+                    </div >
+                    <div class="para">
+                        <h3>RECHARGE TAG</h3>
+                        <p>Recharge your TAG PASE and TeleVía in seconds, with just 3 clicks and from wherever you want</p>
+                    </div>
+                    <div class="para">
+                        <h3> PAY FOR YOUR SERVICES</h3>
+                        <p>Pay your Electricity, Telephone and Television bill, with just 3 clicks and from wherever you want</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/phone_example_.jpg" alt="phone_example" style="margin-left: 550px; height: 60%; ">
+                </div>
+            </div>
+            
+
+    </div>
+ <!-- 3rd Container -->
+
+ <div class="container3"> 
+     <div class="container_data">
+        <h3>Easy, Fast and Safe - Mobile Recharges</h3>
+        <p>Easy, Fast and Safe - Enjoy the best mobile recharge experience from wherever you want at any time, as well as internet packages 
+            and friend packages, TAG Recharges, purchases of Movie Tickets and Streaming, Service Payments, Entertainment Payments , Urban 
+            Transport Payment, Buy Gift Cards and Tickets for Parks and Clubs in just 3 clicks.<br>
+           UnDosTres - It is the largest platform in Mexico to be able to recharge online Cell Phones from Telcel, AT&T, Movistar, Iusacell, 
+           Unefon, Nextel, TAG TeleVía, PASE, buy Movie Tickets at Cinemex, Cinépolis and other operators throughout Mexico, as well as such 
+           as paying for your CFE, Telmex and Sky services, paying for entertainment such as Spotify, Blim, CrunchyRoll, Nintendo eShop, Nintendo 
+           Switch Online, PlayStation Plus, XBox Live Gold, Steam, Blizzard, Minecraft and Rixty. Pay for urban transport such as
+            Uber, Skut, Mobike, Urbvan and Jetty. Buy Gift cards from Best Buy and Starbucks as well as purchase tickets for
+            Sixflags, Inspark, El Rollo water park and Wow Rewards and Club América memberships.</p>
+     </div>
+     <div class="container_data">
+         <h3>Cellular Recharges, TAG, purchase of Movie Tickets, Pay for Electricity, Telephone and Television Services at the moment</h3>
+         <p>
+            There is no longer any need to run to the corner store to put a Cellular Recharge or TAG, or pay for your CFE, Telephone and 
+            Television Services, just enter UnDosTres and make immediate payments and purchases. Enhance your experience with exciting bonuses and
+             discounts on every top-up, payment or purchase you make with us. Our platform for recharges, payments and online purchases is an
+              incredible solution. Without much effort, make your payments through the most secure platform. <br> <br>
+            UnDosTres Customer service 24x7 at care@undostres.com.mx we are always at your disposal, we will help you with your Cellular 
+            Recharges, TAG, purchase of Movie Tickets and Payment of Services, You can contact us at any time by <a href="#" style="text-decoration: none;">clicking here</a> .
+         </p>
+     </div>
+
+ </div>
+
+    <footer>
+        <div class="footerlink" style="display: flex; justify-content: space-around; padding-top: 50px;">
+            <a href="#">PHONE RECHARGE</a>
+            <a href="#">MOVIE TICKETS</a>
+            <a href="#">RECHARGE TAG</a>
+            <a href="#">PAY CFE</a>
+            <a href="#">PAY INTERNET</a>
+            <a href="#">PAY TV</a>
+            <a href="#">PAY CELLURAR PLAN</a>
+            <a href="#">PAY WATER</a>
+            <a href="#">PAY GAS</a>
+            <a href="#">PAY ENTERTAINMENT</a>
+            <a href="#">PAY TRANSPORTATION</a>
+            <a href="#">APPLY FOR LOAN</a>
+            <a href="#">BUY GIFT CARDS</a>
+            <a href="#">VIP MEMBERSHIP</a> 
+        </div>
+        <div>
+            <div class="footer_link">
+                <div>
+                    <img src="./img/header/footer_1.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/header/footer_2.png" alt="" style="margin-top: 25px;">
+                </div>
+                <div class="about">
+                    <h3>ABOUT UNDOSTRES</h3>
+                    <a href="#">About us?</a>
+                    <a href="#">vacanies</a>
+                    <a href="#">Customer Service</a>
+                </div>
+    
+                <div class="help"> 
+                    <h3>HELP</h3>
+                    <a href="#">Frequent Question</a>
+                    <a href="#">Notice of Privacy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="social">
+                    <h3>FOLLOW US ON</h3>
+                    <a><i class='fa fa-facebook'></i></a>
+                    <a><i class='fa fa-instagram'></i></a>
+                    <a> <i class='fa fa-twitter'></i></a>
+                    <a> <i class='fa fa-linkedin'></i></a>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="playstore">
+            <img src="./img/social/playstore.jpg" alt="">
+            <img src="./img/social/app_gallery_playstore_2.png" alt="">
+            <img src="./img/social/apple_store_paystore_3.png" alt="">
+        </div>
+
+        <div class="made_in_maxico">
+            <p><em>Made with</em><i class="fa fa-heart" style="font-size:13px;color:rgb(190, 14, 14);"></i> </i><em>in Maxico</em></p>
+        </div>
+
+        <div class="copy">
+            <p><p>OneDosTres © 2020 By using this site you are accepting our Terms and Conditions and our Privacy Notice.</p></p>
+        </div>
+    </footer>
+
+
+
+ 
+</body>
+</html>
