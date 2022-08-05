@@ -1,0 +1,381 @@
+body{
+    margin: 0px;
+    
+}
+body header{
+    display: flex;
+    height: 80px;
+   
+    padding: 0 50px;
+}
+
+
+header div a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    position: relative;
+}
+ header .headbar1 a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+   
+    width: 0%;
+    height: 1px;
+    background: rgb(0, 0, 0);
+  /*  transition: width 0.5s ease-in-out;   */
+
+ }
+ header .headbar1 a:hover::after{
+    width: 100%;
+ }
+
+ header .headbar2 div ::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+    width: 0%;
+    height: 1px;
+    background: rgb(0, 0, 0);
+ /*   transition: width 0.5s ease-in-out; */
+
+ }
+ header .headbar2 div a:hover::after{
+    width: 100%; 
+ }
+ header div a:active::after{
+    width: 80%; 
+ }
+
+.headbar1{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+
+.headbar2{
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+.headbar2 div{
+    margin-top: auto;
+    position: relative;
+}
+.headbar2 div img {
+        margin-bottom: -5%;
+        margin-right: 5px;
+    }
+#myModal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */        
+    z-index: 1; /* Sit on top */
+    padding-top: 100px;/* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ .modal-content {
+    background-color: #f7f1f1;
+    margin: auto;
+    height: 110%;
+    border: 1px solid #888;
+    width: 27%;
+
+  }
+  .modal-content a{
+      margin-top: 100px;
+      height: 25px;
+      margin-right: 25px;
+      color: black;
+  }
+
+  .close {
+    color: #292222;
+    float: right;
+    margin: 0%;
+    margin-right: 5px;
+    margin-top: -5px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+.close:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+.fbRegister a img{
+    width: 60%;
+    margin-left: 75px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.line:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+    width: 100%;
+    height: 2px;
+    background: rgb(15, 15, 216);
+}
+
+.payment {
+    display: flex; 
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-evenly;
+    
+}
+.navbar{
+    
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
+    margin-right: 5px;
+}
+.navbar a{
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar img{  
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+
+}
+
+.box{
+    display: flex;
+    height: 560px;
+    background-color: rgb(9, 2, 71);
+    box-shadow: 0 4px 8px 0 rgba(9, 46, 17, 0.5);
+    margin: 0 20px;
+    border-radius: 4px;
+}
+.box form{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: none;
+    height: 80%;
+    width: 35%;   
+    margin: 2%; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+
+.box form input{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 41px;
+    margin-bottom: 8%;
+}
+.box form button{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    height: 45px;
+    width: 90%;
+    background-color: rgb(24, 57, 167);
+    color: #ffff;
+    font-size: 25px;
+}
+
+
+.box .item2 img{
+    display: block;
+    width: 80%;
+    height: 55%;
+    float: right;
+    margin-top: 10%;
+}
+
+.pop_form{
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+.pop_form form input{
+    display: block;
+    margin-top:10px
+}
+.pop_form form button{
+    align-items: center;
+}
+
+#loan_model{
+    background-color: darkgoldenrod;
+    display: none;
+    width: 90%;
+    height: 500px;
+}
+
+#loan_close{
+    color: blue;
+}
+#loan_close:hover{
+    color: crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    height: auto;
+    margin: 0 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(9, 46, 17, 0.7);
+}
+.para p, .para h3{
+    margin: 0%;
+    margin-left: 50px;
+    
+    
+}
+.para p {
+    width: 300px;
+}
+.para h3{
+    margin-top: 20px ;
+}
+
+.container3{
+    height: auto;
+    margin: 0 40px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(9, 46, 17, 0.7);
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+.container_data{
+    margin: 0%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.container_data h3, .container_data p{
+    margin: 0%;
+    margin-bottom: 15px;
+}
+footer{
+    height: auto;
+    background-color: rgb(9, 2, 71);
+    width: auto;
+    padding-bottom: 20px;
+ 
+}
+
+.footerlink a{
+    font-size: 12px;
+    color: rgb(211, 209, 207);
+    text-decoration: none;
+}
+
+.footer_link{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.footer_link div{
+    margin-left: 40px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.help{
+    display: flex;
+    flex-direction: column;
+}
+.about h3, .help h3, .social h3{
+    color: blanchedalmond;
+    margin: 0%;
+}
+.about a, .help a{
+    text-decoration: none;
+    color: blanchedalmond;
+    margin-top: 5px;
+}
+.social a i{
+    font-size:40px;
+    margin-top: 10px;
+    margin-right: 5px;
+    color: blanchedalmond;
+}
+
+.social a i:hover{
+    color: rgb(27, 114, 228);
+}
+.playstore{
+    margin: 0 450px;
+}
+.playstore img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 55px;
+}
+
+.made_in_maxico p, .copy p{
+    margin: 0%;
+    margin-top: 10px;
+    color: blanchedalmond;
+    text-align: center;
+}
